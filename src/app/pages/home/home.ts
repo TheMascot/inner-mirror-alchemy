@@ -1,7 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { FacebookCta } from '../../shared/components/facebook-cta/facebook-cta';
 import { siteConfig } from '../../core/config/site.config';
-import {NgOptimizedImage} from '@angular/common';
 
 interface RecognitionCard {
   num: string;
@@ -32,7 +31,7 @@ interface FaqItem {
 })
 export class HomePage {
   readonly facebookUrl = siteConfig.facebookGroupUrl;
-  readonly contactEmail = siteConfig.contactEmail;
+  // readonly contactEmail = siteConfig.contactEmail;
 
   readonly recognitionCards: RecognitionCard[] = [
     {
