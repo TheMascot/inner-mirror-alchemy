@@ -6,7 +6,6 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home').then((m) => m.HomePage),
   },
   {
-    path: '**',
-    loadComponent: () => import('./pages/not-found/not-found').then((m) => m.NotFoundPage),
+    path: '**', redirectTo: '',
   },
 ];

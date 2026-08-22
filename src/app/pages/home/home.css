@@ -355,9 +355,12 @@ h1 em {
 }
 
 .about__signature {
-  font: 25px var(--font-heading) !important;
+  font-family: 'Allura', cursive !important;
+  font-size: 3rem !important;
+  font-weight: 400;
   color: var(--gold) !important;
   margin-top: var(--space-lg);
+  line-height: 1;
 }
 
 /* ===== FAQ ===== */

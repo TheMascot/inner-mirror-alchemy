@@ -7,3 +7,34 @@
 main {
   flex: 1;
 }
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 55px;
+  height: 55px;
+  border: 0;
+  border-radius: 50%;
+  background: #8f8f8f;
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 30;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.scroll-top:hover {
+  background: #777;
+  transform: translateY(-2px);
+}
+
+.scroll-top:focus-visible {
+  outline: 2px solid #555;
+  outline-offset: 2px;
+}
