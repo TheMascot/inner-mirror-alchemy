@@ -1,7 +1,8 @@
-import { Component, HostListener, OnInit, inject, signal } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import {Component, HostListener, inject, signal} from '@angular/core';
+import {Router, RouterOutlet} from '@angular/router';
 import { Header } from './layout/header/header';
 import { Footer } from './layout/footer/footer';
+
 
 @Component({
   selector: 'app-root',
@@ -9,15 +10,9 @@ import { Footer } from './layout/footer/footer';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App implements OnInit {
-  private readonly router = inject(Router);
+export class App {
   protected readonly showScrollTop = signal(false);
-
-  ngOnInit(): void {
-    void this.router.navigateByUrl('/', { replaceUrl: true }).then(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
+  private readonly router = inject(Router);
 
   @HostListener('window:scroll')
   onWindowScroll(): void {
@@ -25,8 +20,11 @@ export class App implements OnInit {
   }
 
   scrollToTop(): void {
-    // Force-remove fragment from URL (e.g. /#rolam -> /)
-    window.history.replaceState(null, '', '/');
+   void this.router.navigate([], {
+      fragment: undefined,
+      replaceUrl: true,
+      queryParamsHandling: 'preserve',
+    });
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
