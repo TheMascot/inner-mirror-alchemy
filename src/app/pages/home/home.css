@@ -1,6 +1,6 @@
 /* ===== Shared ===== */
 .section {
-  padding: var(--space-4xl) 0;
+  padding: var(--space-3xl) 0;
 }
 
 .section--sand {
@@ -361,6 +361,7 @@ h1 em {
   color: var(--gold) !important;
   margin-top: var(--space-lg);
   line-height: 1;
+  justify-self: end;
 }
 
 /* ===== FAQ ===== */
