@@ -1,0 +1,79 @@
+<header class="header">
+  <div class="container header__inner">
+    <a routerLink="/" class="header__brand" (click)="closeMenu()">
+      BELSŐ TÜKÖR ALKÍMIÁJA
+    </a>
+
+    <nav class="header__nav" aria-label="Főnavigáció">
+      <ul class="header__nav-list">
+        @for (item of nav; track item.label) {
+          <li>
+            <a
+              [routerLink]="item.routerLink"
+              [fragment]="item.fragment"
+              class="header__nav-link"
+            >
+              {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <a
+      [routerLink]="headerCta.routerLink"
+      [fragment]="headerCta.fragment"
+      class="header__cta btn"
+    >
+      {{ headerCta.label }}
+    </a>
+
+    <button
+      class="header__toggle"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="isMenuOpen()"
+      aria-controls="mobile-nav"
+      aria-label="Navigáció megnyitása"
+    >
+      <span class="header__bar" [class.is-open]="isMenuOpen()"></span>
+      <span class="header__bar" [class.is-open]="isMenuOpen()"></span>
+      <span class="header__bar" [class.is-open]="isMenuOpen()"></span>
+    </button>
+  </div>
+</header>
+
+@if (isMenuOpen()) {
+  <div class="mobile-overlay" (click)="closeMenu()" aria-hidden="true"></div>
+}
+
+<nav
+  class="mobile-nav"
+  [class.is-open]="isMenuOpen()"
+  id="mobile-nav"
+  aria-label="Mobil navigáció"
+>
+  <ul class="mobile-nav__list">
+    @for (item of nav; track item.label) {
+      <li>
+        <a
+          [routerLink]="item.routerLink"
+          [fragment]="item.fragment"
+          class="mobile-nav__link"
+          (click)="closeMenu()"
+        >
+          {{ item.label }}
+        </a>
+      </li>
+    }
+    <li class="mobile-nav__cta-item">
+      <a
+        [routerLink]="headerCta.routerLink"
+        [fragment]="headerCta.fragment"
+        class="btn"
+        (click)="closeMenu()"
+      >
+        {{ headerCta.label }}
+      </a>
+    </li>
+  </ul>
+</nav>

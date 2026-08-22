@@ -1,0 +1,30 @@
+.not-found {
+  min-height: 60dvh;
+  display: flex;
+  align-items: center;
+  padding: var(--space-4xl) 0;
+}
+
+.not-found__inner {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.not-found__num {
+  font: italic 96px var(--font-heading);
+  color: var(--gold);
+  opacity: 0.25;
+  line-height: 1;
+  margin-bottom: var(--space-md);
+}
+
+.not-found__inner h1 {
+  margin-bottom: var(--space-md);
+}
+
+.not-found__text {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: var(--space-2xl);
+}

@@ -1,0 +1,253 @@
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__lead">
+      <span class="kicker">Párkapcsolati önismeret · Asztrológia · Csung Jüan Csikung</span>
+      <h1>
+        Ne csak azt kérdezd,<br />
+        <em>ki</em> lesz melletted.<br />
+        Azt is, hogy <em>miért.</em>
+      </h1>
+    </div>
+
+    <div class="hero__visual" aria-label="Közösség képe – hamarosan">
+      <img
+        src="/og-image.jpg"
+        alt="Belső Tükör Alkímiája közösségi borítókép"
+        loading="eager"
+        fetchpriority="high"
+        class="hero__image"
+      />
+    </div>
+
+    <div class="hero__meta">
+      <p class="hero__copy">
+        Ha újra és újra hasonló párkapcsolati történetekben találod magad, lehet, hogy nem egy
+        újabb „jó tanácsra" van szükséged. Hanem arra, hogy meglásd a saját történeted mélyén
+        működő mintát.
+      </p>
+
+      <div class="hero__buttons">
+        <a [href]="facebookUrl" target="_blank" rel="noopener noreferrer" class="btn">
+          Kérem az ingyenes meghívót
+        </a>
+        <a href="#modszer" class="btn btn-outline">Megismerem a szemléletet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quote band -->
+<div class="band" role="complementary">
+  „A valódi változás a párkapcsolatodban veled kezdődik."
+</div>
+
+<!-- Recognition -->
+<section class="section" id="ismeros" aria-labelledby="ismeros-heading">
+  <div class="container">
+    <div class="section-center">
+      <span class="kicker">Talán magadra ismersz</span>
+      <h2 id="ismeros-heading">
+        Más férfi, más történet,<br />
+        mégis ugyanaz az érzés.
+      </h2>
+      <p class="lead">
+        Lehet, hogy már rengeteget dolgoztál magadon. Felismerted a red flageket, olvastál a
+        kötődésről, hallgattál párkapcsolati tanácsokat – mégis van, ami újra és újra ismétlődik.
+      </p>
+    </div>
+
+    <div class="card-grid">
+      @for (card of recognitionCards; track card.num) {
+        <article class="card">
+          <div class="card__num">{{ card.num }}</div>
+          <h3 class="card__title">{{ card.title }}</h3>
+          <p class="card__desc">{{ card.description }}</p>
+        </article>
+      }
+    </div>
+
+    <blockquote class="section-quote">
+      „A párkapcsolat nem csupán arról mesél, hogy milyen a másik ember. Arról is tükröt tart,
+      hogy te hogyan vagy jelen önmagadban és a kapcsolódásban."
+    </blockquote>
+  </div>
+</section>
+
+<!-- Method -->
+<section class="section section--sand" id="modszer" aria-labelledby="modszer-heading">
+  <div class="container method">
+    <div class="method__symbol" aria-hidden="true">
+      <div class="compass">
+        <div class="compass__needle">✧</div>
+        <div class="compass__label">IRÁNYTŰ</div>
+      </div>
+    </div>
+
+    <div class="method__content">
+      <span class="kicker">A módszerem</span>
+      <h2 id="modszer-heading">Belső Tükör Alkímiája</h2>
+      <p class="method__tagline">Iránytű a lélek térképén.</p>
+      <p class="method__text">
+        Az iránytű nem dönt helyetted. Nem mondja meg, kit kell választanod, és nem ígéri, hogy
+        egyetlen technikával „bevonzod" a megfelelő férfit.
+      </p>
+      <p class="method__text">
+        Segít eligazodni a saját belső térképeden: felismerni a visszatérő kapcsolati mintákat,
+        megérteni az energiáid működését, és tudatosabban választani azt az irányt, amelyben
+        valóban jól tudsz kapcsolódni.
+      </p>
+      <ul class="method__list">
+        @for (item of methodItems; track item.title) {
+          <li class="method__item">
+            <b aria-hidden="true">✦</b>
+            <span><strong>{{ item.title }}</strong> – {{ item.description }}</span>
+          </li>
+        }
+      </ul>
+      <a
+        [href]="facebookUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn"
+      >
+        Megismerem az ingyenes közösséget
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Community videos -->
+<section class="section" aria-labelledby="csoport-video-heading">
+  <div class="container">
+    <div class="section-center">
+      <span class="kicker">Amit a csoportban megmutatok</span>
+      <h2 id="csoport-video-heading">
+        Más szemmel nézünk rá<br />
+        a párkapcsolatokra.
+      </h2>
+      <p class="lead">
+        Az ingyenes Facebook-csoportban videókban bontom le a párkapcsolati teremtéssel és a
+        bulvárasztrológiával kapcsolatos tévhiteket, és megmutatom a mélyebb energetikai és
+        asztrológiai összefüggéseket.
+      </p>
+    </div>
+    <div class="video-grid">
+      @for (video of videos; track video.title) {
+        <div class="video-card">
+          <div class="video-card__play" aria-hidden="true">▶</div>
+          <p class="video-card__title">{{ video.title }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section section--sand" id="rolam" aria-labelledby="rolam-heading">
+  <div class="container about">
+    <div class="about__portrait" aria-label="Szita Viola portréja – hamarosan">
+      <img
+        src="/portrait.jpg"
+        alt="Szita Viola portréja"
+        loading="lazy"
+        decoding="async"
+        class="about__image"
+      />
+    </div>
+    <div class="about__content">
+      <span class="kicker">Ki vagyok én?</span>
+      <h2 id="rolam-heading">
+        Nem azt szeretném megtanítani neked, hogyan szerezz meg valakit.
+      </h2>
+      <p>Hanem azt, hogyan értsd meg mélyebben önmagadat a kapcsolataidban.</p>
+      <p>
+        Segítő hivatású szakemberként olyan nőkkel foglalkozom, akiknek elegük van az ismétlődő
+        negatív párkapcsolati mintákból, és harmonikus, felvállalt, hosszú távú kapcsolatra
+        vágynak.
+      </p>
+      <p>
+        A Belső Tükör Alkímiája az én személyemhez kötődik, ugyanakkor ősi alapokon nyugszik: az
+        asztrológia szimbolikus tudására és a Csung Jüan Csikung energetikai szemléletére épül.
+      </p>
+      <p class="about__signature">Szita Viola</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" aria-labelledby="faq-heading">
+  <div class="container faq">
+    <div class="section-center">
+      <span class="kicker">Kérdések</span>
+      <h2 id="faq-heading">Gyakran ismételt kérdések</h2>
+    </div>
+    <div class="faq__list">
+      @for (item of faqs; track item.question) {
+        <div class="faq__item">
+          <button
+            class="faq__question"
+            (click)="toggleFaq(item)"
+            [attr.aria-expanded]="item.isOpen()"
+          >
+            <span>{{ item.question }}</span>
+            <span class="faq__icon" [class.is-open]="item.isOpen()" aria-hidden="true">+</span>
+          </button>
+          @if (item.isOpen()) {
+            <div class="faq__answer">
+              <p>{{ item.answer }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!--<section class="section" id="kapcsolat" aria-labelledby="kapcsolat-heading">-->
+<!--  <div class="container">-->
+<!--    <div class="section-center">-->
+<!--      <span class="kicker">Kapcsolat</span>-->
+<!--      <h2 id="kapcsolat-heading">Írj nekem</h2>-->
+<!--      <p class="lead">Szívesen hallok felőled.</p>-->
+<!--    </div>-->
+
+<!--    <div class="card-grid">-->
+<!--      <article class="card">-->
+<!--        <div class="card__num">01</div>-->
+<!--        <h3 class="card__title">Facebook-csoport</h3>-->
+<!--        <p class="card__desc">-->
+<!--          A legjobb módja, hogy kapcsolatba lépj velem és a közösséggel.-->
+<!--        </p>-->
+<!--        <a [href]="facebookUrl" target="_blank" rel="noopener noreferrer" class="btn">-->
+<!--          Belépek a csoportba-->
+<!--        </a>-->
+<!--      </article>-->
+
+<!--      <article class="card">-->
+<!--        <div class="card__num">02</div>-->
+<!--        <h3 class="card__title">E-mail</h3>-->
+<!--        <p class="card__desc">-->
+<!--          Közvetlen megkeresésekre és egyéb kérdésekre e-mailben is válaszolok.-->
+<!--        </p>-->
+<!--        <a [href]="'mailto:' + contactEmail" class="contact-link">-->
+<!--          {{ contactEmail }}-->
+<!--        </a>-->
+<!--      </article>-->
+
+<!--      <article class="card">-->
+<!--        <div class="card__num">03</div>-->
+<!--        <h3 class="card__title">Események</h3>-->
+<!--        <p class="card__desc">-->
+<!--          Az összes közelgő eseményt először a Facebook-csoportban hirdetem meg.-->
+<!--        </p>-->
+<!--        <a [href]="facebookUrl" target="_blank" rel="noopener noreferrer" class="contact-link">-->
+<!--          Események követése →-->
+<!--        </a>-->
+<!--      </article>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!-- Facebook CTA -->
+<app-facebook-cta />

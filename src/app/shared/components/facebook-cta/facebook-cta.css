@@ -1,0 +1,44 @@
+.cta {
+  padding: 105px 0;
+  text-align: center;
+  color: #fffaf3;
+  background: linear-gradient(135deg, #705e49, #ad9166);
+}
+
+.cta__inner {
+  max-width: 850px;
+}
+
+.cta__kicker {
+  color: #efd9af;
+  margin-bottom: var(--space-sm);
+}
+
+.cta__heading {
+  color: #fffaf3;
+  margin: 12px auto 20px;
+  max-width: 850px;
+}
+
+.cta__text {
+  max-width: 700px;
+  margin: 0 auto 32px;
+  font-size: 18px;
+  color: rgba(255, 250, 243, 0.85);
+}
+
+.cta__btn {
+  background: #f3d4c8;
+  color: #3d302a;
+}
+
+.cta__btn:hover {
+  background: #e8c4b4;
+  color: #3d302a;
+}
+
+@media (max-width: 850px) {
+  .cta {
+    padding: 68px 0;
+  }
+}
