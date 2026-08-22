@@ -2,7 +2,7 @@
   padding: 105px 0;
   text-align: center;
   color: #fffaf3;
-  background: linear-gradient(135deg, #705e49, #ad9166);
+  background: var(--ink);
 }
 
 .cta__inner {
@@ -28,12 +28,12 @@
 }
 
 .cta__btn {
-  background: #f3d4c8;
+  background: var(--rose-dark);
   color: #3d302a;
 }
 
 .cta__btn:hover {
-  background: #e8c4b4;
+  background: var(--rose);
   color: #3d302a;
 }
 

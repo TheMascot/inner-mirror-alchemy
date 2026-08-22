@@ -249,6 +249,7 @@ h1 em {
   font: italic 27px var(--font-heading);
   color: var(--gold);
   margin-bottom: var(--space-md);
+  margin-top: var(--space-sm);
 }
 
 .method__text {
@@ -452,7 +453,7 @@ h1 em {
   }
 
   .hero__buttons {
-    justify-self: start;
+    justify-self: center;
     margin-top: 20px;
   }
 

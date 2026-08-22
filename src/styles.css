@@ -7,16 +7,16 @@
 }
 
 :root {
-  --bg: #fbf8f2;
-  --paper: #fffdf9;
-  --sand: #eee4d8;
-  --gold: #a78450;
-  --gold-light: #d3bd93;
-  --rose: #e8a18d;
-  --rose-dark: #d0806e;
-  --ink: #302a27;
-  --muted: #766c65;
-  --line: rgba(167, 132, 80, 0.22);
+  --bg: #E5E2E9;
+  --paper: #F8F6F3;
+  --sand: #D8D1DC;
+  --gold: #600E99;
+  --gold-light: #A99BB3;
+  --rose: #FFAF96;
+  --rose-dark: #E28B78;
+  --ink: #18041c;
+  --muted: #716875;
+  --line: rgba(96, 14, 153, 0.18);
 
   --font-heading: Georgia, 'Times New Roman', serif;
   --font-body: Arial, Helvetica, sans-serif;
