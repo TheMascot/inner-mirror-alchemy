@@ -31,7 +31,8 @@ interface FaqItem {
 })
 export class HomePage {
   readonly facebookUrl = siteConfig.facebookGroupUrl;
-  // readonly contactEmail = siteConfig.contactEmail;
+  readonly facebookPrivateUrl = siteConfig.facebookPrivateUrl;
+  readonly contactEmailParts = siteConfig.contactEmail;
 
   readonly recognitionCards: RecognitionCard[] = [
     {
@@ -115,7 +116,7 @@ export class HomePage {
     {
       question: 'Ingyenes a csoport?',
       answer:
-        'Az alapcsoport ingyenes, és ott is rengeteg értékes tartalom található. Egyes mélyebb programok és workshopok fizetősek – ezekről mindig előre tájékoztatom a csoportot.',
+        'Igen, a csoportban való részvétel teljesen ingyenes.',
       isOpen: signal(false),
     },
   ];

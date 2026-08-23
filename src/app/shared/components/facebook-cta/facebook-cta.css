@@ -28,13 +28,13 @@
 }
 
 .cta__btn {
-  background: var(--rose-dark);
-  color: #3d302a;
+  background: var(--rose);
+  color: var(--ink);
 }
 
 .cta__btn:hover {
-  background: var(--rose);
-  color: #3d302a;
+  background: var(--rose-dark);
+  color: var(--ink);
 }
 
 @media (max-width: 850px) {

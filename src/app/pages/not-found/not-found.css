@@ -13,7 +13,7 @@
 
 .not-found__num {
   font: italic 96px var(--font-heading);
-  color: var(--gold);
+  color: var(--violet);
   opacity: 0.25;
   line-height: 1;
   margin-bottom: var(--space-md);

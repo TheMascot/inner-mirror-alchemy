@@ -10,36 +10,47 @@
       </h1>
     </div>
 
-    <div class="hero__visual" aria-label="Közösség képe – hamarosan">
-      <img
-        src="/hero-image.jpg"
-        alt="Belső Tükör Alkímiája közösségi borítókép"
-        loading="eager"
-        fetchpriority="high"
-        class="hero__image"
-      />
+    <div class="hero__visual" aria-label="Viola portréja – hamarosan">
+      <div class="hero__image-wrap">
+        <img
+          src="/hero-image.jpg"
+          alt="A csoport alapítójának portréja"
+          loading="eager"
+          fetchpriority="high"
+          class="hero__image"
+        />
+      </div>
     </div>
 
     <div class="hero__meta">
-      <p class="hero__copy">
-        Ha újra és újra hasonló párkapcsolati történetekben találod magad, lehet, hogy nem egy
-        újabb „jó tanácsra" van szükséged. Hanem arra, hogy meglásd a saját történeted mélyén
-        működő mintát.
-      </p>
+      <div>
 
-      <div class="hero__buttons">
-        <a [href]="facebookUrl" target="_blank" rel="noopener noreferrer" class="btn">
-          Kérem az ingyenes meghívót
-        </a>
+      <p class="hero__copy">
+        Hogy meglásd a történeted mélyén működő mintát, csatlakozz
+        <br>
+        <span>
+          <strong>
+          A NŐ BELSŐ ALKÍMIÁJA A BOLDOG PÁRKAPCSOLATOKÉRT
+          </strong>
+        </span>
+        Facebook™ csoportomhoz:
+      </p>
+      <p class="hero__copy">
+
+      </p>
       </div>
+
+      <a [href]="facebookUrl" target="_blank" rel="noopener noreferrer" class="btn hero__buttons">
+        KÉREM AZ INGYENES MEGHÍVÓMAT
+      </a>
     </div>
   </div>
 </section>
 
 <!-- Quote band -->
-<div class="band" role="complementary">
-  „A valódi változás a párkapcsolatodban veled kezdődik."
-</div>
+<aside class="band">
+  „A valódi változás a párkapcsolatodban Veled kezdődik."
+</aside>
 
 <!-- Recognition -->
 <section class="section" id="ismeros" aria-labelledby="ismeros-heading">
@@ -111,9 +122,9 @@
         [href]="facebookUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="btn"
+        class="btn method__button"
       >
-        Megismerem az ingyenes közösséget
+        MEGISMEREM A KÖZÖSSÉGET
       </a>
     </div>
   </div>
@@ -206,36 +217,45 @@
   </div>
 </section>
 
-<!--<section class="section" id="kapcsolat" aria-labelledby="kapcsolat-heading">-->
-<!--  <div class="container">-->
-<!--    <div class="section-center">-->
-<!--      <span class="kicker">Kapcsolat</span>-->
-<!--      <h2 id="kapcsolat-heading">Írj nekem</h2>-->
-<!--      <p class="lead">Szívesen hallok felőled.</p>-->
-<!--    </div>-->
+<section class="section" id="kapcsolat" aria-labelledby="kapcsolat-heading">
+  <div class="container">
+    <div class="section-center">
+      <span class="kicker">Kapcsolat</span>
+      <h2 id="kapcsolat-heading">Írj nekem</h2>
+      <p class="lead">Szívesen hallok felőled.</p>
+    </div>
 
-<!--    <div class="card-grid">-->
-<!--      <article class="card">-->
-<!--        <div class="card__num">01</div>-->
-<!--        <h3 class="card__title">Facebook-csoport</h3>-->
-<!--        <p class="card__desc">-->
-<!--          A legjobb módja, hogy kapcsolatba lépj velem és a közösséggel.-->
-<!--        </p>-->
-<!--        <a [href]="facebookUrl" target="_blank" rel="noopener noreferrer" class="btn">-->
-<!--          Belépek a csoportba-->
-<!--        </a>-->
-<!--      </article>-->
+    <div class="card-grid">
+      <article class="card">
+        <div class="card__num">01</div>
+        <h3 class="card__title">Facebook™-üzenet</h3>
+        <p class="card__desc">
+          Privát üzenetben is megkereshetsz személyes kérdéseiddel.
+        </p>
+        <a [href]="facebookPrivateUrl" target="_blank" rel="noopener noreferrer" class="contact-link">
+          Írok Violának →
+        </a>
+      </article>
 
-<!--      <article class="card">-->
-<!--        <div class="card__num">02</div>-->
-<!--        <h3 class="card__title">E-mail</h3>-->
-<!--        <p class="card__desc">-->
-<!--          Közvetlen megkeresésekre és egyéb kérdésekre e-mailben is válaszolok.-->
-<!--        </p>-->
-<!--        <a [href]="'mailto:' + contactEmail" class="contact-link">-->
-<!--          {{ contactEmail }}-->
-<!--        </a>-->
-<!--      </article>-->
+      <article class="card">
+        <div class="card__num">02</div>
+        <h3 class="card__title">E-mail</h3>
+        <p class="card__desc">
+          Közvetlen megkeresésekre és egyéb kérdésekre e-mailben is válaszolok ezen a címen:
+        </p>
+        <div class="contact__address" aria-label="Szita Viola digitális elérhetősége">
+          <img
+            src="/em-addr.png"
+            alt=""
+            loading="lazy"
+            decoding="async"
+            class="contact__image"
+          />
+        </div>
+
+
+
+      </article>
 
 <!--      <article class="card">-->
 <!--        <div class="card__num">03</div>-->
@@ -247,9 +267,9 @@
 <!--          Események követése →-->
 <!--        </a>-->
 <!--      </article>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
+    </div>
+  </div>
+</section>
 
 <!-- Facebook CTA -->
 <app-facebook-cta/>

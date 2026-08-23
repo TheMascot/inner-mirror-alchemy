@@ -26,7 +26,7 @@
 }
 
 .header__brand:hover {
-  color: var(--gold);
+  color: var(--violet);
 }
 
 .header__nav {
@@ -67,7 +67,7 @@
 }
 
 .header__toggle:focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--violet);
   outline-offset: 2px;
 }
 
@@ -149,7 +149,7 @@
 
 .mobile-nav__link:hover {
   color: var(--ink);
-  border-left-color: var(--gold);
+  border-left-color: var(--violet);
 }
 
 .mobile-nav__cta-item {
