@@ -49,11 +49,6 @@
   margin-bottom: 0;
 }
 
-.hero__content .kicker {
-  margin-bottom: 0;
-  line-height: 1.7;
-}
-
 .hero__copy {
   font-size: 18px;
   color: var(--muted);
@@ -93,19 +88,6 @@ h1 em {
   padding: 0;
   background: transparent;
   box-shadow: none;
-}
-
-.hero__visual strong {
-  display: block;
-  font: italic 34px var(--font-heading);
-  margin-bottom: 12px;
-}
-
-.hero__visual small {
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
 }
 
 .hero__image {
@@ -199,49 +181,6 @@ h1 em {
 .method__image {
   border-radius: 24px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
-}
-
-.compass {
-  width: 310px;
-  height: 310px;
-  border: 1px solid var(--violet);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  position: relative;
-  color: var(--violet);
-}
-
-.compass::before,
-.compass::after {
-  content: '';
-  position: absolute;
-  border: 1px solid var(--violet-light);
-  border-radius: 50%;
-}
-
-.compass::before {
-  inset: 28px;
-}
-
-.compass::after {
-  inset: 58px;
-}
-
-.compass__needle {
-  font-size: 110px;
-  z-index: 2;
-  line-height: 1;
-}
-
-.compass__label {
-  position: absolute;
-  bottom: 47px;
-  background: #f7f1e9;
-  padding: 2px 12px;
-  font: italic 18px var(--font-heading);
-  z-index: 3;
-  color: var(--violet);
 }
 
 .method__content .kicker {
@@ -347,19 +286,6 @@ h1 em {
   display: block;
   object-fit: cover;
   object-position: center;
-}
-
-.about__image-wrap {
-  overflow: hidden;
-  border-radius: 24px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
-}
-
-
-.about__portrait strong {
-  display: block;
-  font: italic 30px var(--font-heading);
-  margin-bottom: 12px;
 }
 
 .about__content .kicker {
