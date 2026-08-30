@@ -30,9 +30,9 @@
 .hero__grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   column-gap: 70px;
-  row-gap: 24px;
+  row-gap: 16px;
   align-items: start;
 }
 
@@ -53,12 +53,14 @@
 }
 
 .hero__buttons {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  align-self: center;
+  justify-self: center;
+  place-items: center;
   margin-top: 0;
   padding: 30px 100px;
-  justify-self: center; /* center in right grid cell */
-  align-self: center;
   justify-content: center;
   box-shadow: #624c3f 3px 3px 10px;
   border-radius: 5px;
@@ -100,9 +102,17 @@ h1 em {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
 }
 
+.hero__subheading {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+  font-size: 1.4375rem;
+  line-height: 1.3;
+}
+
 .hero__meta {
   grid-column: 1 / -1;
-  grid-row: 2;
+  grid-row: 3;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr; /* same as .hero__grid */
   column-gap: 70px; /* same as .hero__grid */
@@ -393,7 +403,8 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.28);
 
   .hero__lead,
   .hero__visual,
-  .hero__meta {
+  .hero__meta,
+  .hero__subheading{
     grid-column: 1;
     grid-row: auto;
     margin: auto;
@@ -407,8 +418,12 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.28);
   }
 
   .hero__buttons {
-    justify-self: center;
-    margin-top: 20px;
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: stretch;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
     padding: 20px 20px;
     text-align: center;
   }
