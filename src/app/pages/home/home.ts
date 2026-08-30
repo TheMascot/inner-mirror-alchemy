@@ -32,7 +32,7 @@ interface FaqItem {
 export class HomePage {
   readonly facebookUrl = siteConfig.facebookGroupUrl;
   readonly facebookPrivateUrl = siteConfig.facebookPrivateUrl;
-  readonly contactEmailParts = siteConfig.contactEmail;
+  // readonly contactEmailParts = siteConfig.contactEmail;
 
   readonly recognitionCards: RecognitionCard[] = [
     {
@@ -49,27 +49,28 @@ export class HomePage {
     },
     {
       num: '03',
-      title: 'Nem félkapcsolatra vágysz',
+      title: 'Nem félkapcsolatot akarsz',
       description:
-        'Harmonikus, felvállalt, hosszú távú párkapcsolatra vágysz – nem arra, hogy állandóan találgass.',
+        'Harmonikus, felvállalt és hosszú távú párkapcsolatra vágysz – nem arra, hogy állandóan találgass.',
     },
     {
       num: '04',
       title: 'Ésszel már tudod',
       description:
-        'Lehet, hogy pontosan látod, mit kellene másképp csinálnod, de a helyzetekben a régi minta veszi át az irányítást.',
+        'Lehet, hogy pontosan látod, mit kellene másképp csinálnod, de az éles helyzetekben a régi minta veszi át az' +
+        ' irányítást.',
     },
     {
       num: '05',
       title: 'Nem érted, miért pont ő',
       description:
-        'Vannak férfitípusok, akik valamiért sokkal mélyebben megérintenek. Ennek is lehet belső oka.',
+        'Bizonyos férfitípusok valamiért sokkal mélyebben megérintenek. Ennek is lehet belső oka.',
     },
     {
       num: '06',
-      title: 'Mélyebb választ keresel',
+      title: 'Mélyebb válaszra vágysz',
       description:
-        'Nem hibást keresel. Meg akarod érteni önmagad és a kapcsolataid mögött működő összefüggéseket.',
+        'Nem hibást keresel. Meg akarod érteni önmagad és a kapcsolataid mögött húzódó összefüggéseket.',
     },
   ];
 
@@ -96,7 +97,7 @@ export class HomePage {
 
   readonly faqs: FaqItem[] = [
     {
-      question: 'Kinek szól a csoport?',
+      question: 'Kinek szól a párkapcsolati önismereti csoport?',
       answer:
         'Olyan nőknek, akiknek elegük van az ismétlődő negatív párkapcsolati mintákból, és harmonikus, felvállalt, hosszú távú kapcsolatra vágynak. Nem szükséges előképzettség, csak nyitottság a mélyebb önismeretre.',
       isOpen: signal(false),
@@ -108,7 +109,7 @@ export class HomePage {
       isOpen: signal(false),
     },
     {
-      question: 'Kell-e ismernem az asztrológiát?',
+      question: 'Szükség van előzetes asztrológiai tudásra?',
       answer:
         'Egyáltalán nem. A születési képletet nem jóslásra, hanem önismereti eszközként használjuk. Mindent elmagyarázok, nincs szükség előzetes tudásra.',
       isOpen: signal(false),

@@ -69,9 +69,12 @@ h1 {
 }
 h2 {
   font-size: clamp(2.25rem, 4vw, 3.4375rem);
+  margin: 12px 0;
 }
 h3 {
   font-size: 1.4375rem;
+  margin: 6px 0 12px;
+
 }
 
 p {
