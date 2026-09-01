@@ -91,13 +91,15 @@ export class HomePage {
       question: 'Szükség van előzetes asztrológiai tudásra?',
       answer:
         'Egyáltalán nincs.  Mindent' +
-        ' elmagyarázok.',
+        ' elmagyarázok.' + 'Viszont ha felmerül benned kérdés, a csoportban van lehetőséged feltenni azokat és én' +
+        ' válaszolni fogok., ',
       isOpen: signal(false),
     },
     {
       question: 'Ingyenes a csoport?',
       answer:
-        'Igen, a csoportban való részvétel teljesen ingyenes.',
+        'Igen, a csoportban való részvétel teljesen ingyenes. A célom az ismeretterjesztés és az asztrológiára' +
+        ' rakódott tévhitek feloldása.',
       isOpen: signal(false),
     },
   ];

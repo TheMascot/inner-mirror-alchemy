@@ -175,67 +175,68 @@ hero__meta h3{
 }
 
 /* ===== Method ===== */
-.method {
+.group {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
-  gap: 80px;
+  gap: 30px;
   grid-row-gap: 0px;
   align-items: center;
 }
 
-.method__symbol {
+.group__symbol {
   min-height: 470px;
   display: grid;
   place-items: center;
   background: transparent;
 }
 
-.method__image {
+.group__image {
   border-radius: 24px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
 }
 
-.method__content .kicker {
+.group__content .kicker {
   margin-bottom: 0;
 }
 
-.method__tagline {
+.group__tagline {
   font: italic 27px var(--font-heading);
   color: var(--violet);
   margin-bottom: var(--space-md);
   margin-top: var(--space-sm);
 }
 
-.method__text {
+.group__text {
   color: var(--muted);
   margin-bottom: var(--space-md);
   text-align: justify;
 }
 
-.method__list {
+.group__list {
   display: grid;
   gap: 14px;
   margin: 30px 0;
 }
 
-.method__item {
+.group__item {
   display: flex;
   gap: 13px;
   font-size: 15px;
 }
 
-.method__item b {
+.group__item b {
   color: var(--violet);
   flex-shrink: 0;
   margin-top: 2px;
 }
 
-.method__button {
+.group__button {
   box-shadow: #624c3f 3px 3px 10px;
   margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
 }
 
-.method-quote {
+.group-quote {
   grid-column: 1 / -1;
   max-width: 850px;
   margin: 0 auto;
@@ -287,7 +288,7 @@ hero__meta h3{
 .about {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
-  gap: 75px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -326,6 +327,12 @@ hero__meta h3{
   margin-top: var(--space-lg);
   line-height: 1;
   justify-self: end;
+}
+
+.about__text {
+  color: var(--muted);
+  margin-bottom: var(--space-md);
+  text-align: justify;
 }
 
 .contact__address {
@@ -409,7 +416,7 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.28);
 /* ===== Responsive ===== */
 @media (max-width: 850px) {
   .hero__grid,
-  .method,
+  .group,
   .about {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
@@ -466,10 +473,10 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.28);
     object-fit: contain;
   }
 
-  .method__symbol {
+  .group__symbol {
     min-height: 380px;
   }
-  .method__button{
+  .group__button{
     width: 100%;
     text-align: center;
     margin-bottom: 0;

@@ -15,7 +15,7 @@ export const siteConfig = {
   contactEmail: {user: 'szitaviola', sing: '@', domain: 'google.com'},
   nav: [
     { label: 'Ismerős?', routerLink: '/', fragment: 'ismeros' },
-    { label: 'A módszer', routerLink: '/', fragment: 'modszer' },
+    { label: 'A csoportról', routerLink: '/', fragment: 'csoport' },
     { label: 'Rólam', routerLink: '/', fragment: 'rolam'},
     { label: 'Kapcsolat', routerLink: '/', fragment: 'kapcsolat' },
   ] as NavItem[],
