@@ -31,7 +31,7 @@
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   grid-template-rows: auto auto auto;
-  column-gap: 70px;
+  column-gap: 30px;
   row-gap: 16px;
   align-items: start;
 }
@@ -172,6 +172,7 @@ hero__meta h3{
   padding: 25px 30px;
   font: italic 23px var(--font-heading);
   color: var(--ink);
+  text-align: justify;
 }
 
 /* ===== Method ===== */
@@ -245,6 +246,7 @@ hero__meta h3{
   padding: 25px 30px;
   font: italic 23px var(--font-heading);
   color: var(--ink);
+  text-align: justify;
 }
 
 /* ===== Video grid ===== */
