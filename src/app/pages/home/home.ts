@@ -37,56 +37,32 @@ export class HomePage {
   readonly recognitionCards: RecognitionCard[] = [
     {
       num: '01',
-      title: 'Újra ugyanoda jutsz',
+      title: 'Amikor nem érted, miben vagy...',
       description:
-        'Másik férfi, másik kapcsolat, mégis hasonló bizonytalanság vagy érzelmi elérhetetlenség jelenik meg.',
+        'Hosszútávú, felvállalt, boldog párkapcsolatra vágysz, mégis egymást követik az olyan kapcsolatok az életedben, ' +
+        'amiben rákérdezni is félsz, hogy: Kik vagyunk mi egymásnak?',
     },
     {
       num: '02',
-      title: 'Többet adsz, mint amennyit kapsz',
+      title: 'Nem érted, miért pont Ő?',
       description:
-        'Megérteni, segíteni és kivárni próbálsz, miközben háttérbe kerülnek a saját igényeid.',
+        'Már felfedezted, hogy bizonyos típusú férfiak vonzanak, mégsem tudsz harmonikus kapcsolatban lenni velük. ' +
+        'Ha megérted, mit tükröz a társ a saját árnyékszemélyiségedből, a kapcsolat is mélyebb és boldogabb lesz.',
     },
     {
       num: '03',
-      title: 'Nem félkapcsolatot akarsz',
+      title: 'Amikor a másik csak elvesz...',
       description:
-        'Harmonikus, felvállalt és hosszú távú párkapcsolatra vágysz – nem arra, hogy állandóan találgass.',
+        'Az új kapcsolat mindig feldob, de a kezdeti mézeshetek után mindig azt érzed, hogy a másik elkezdi leszívni' +
+        ' az energiád, és nem tudod, hogyan változtass ezen.',
     },
     {
       num: '04',
-      title: 'Ésszel már tudod',
+      title: 'Attól félsz, hogy újra ugyanaz történik majd...',
       description:
-        'Lehet, hogy pontosan látod, mit kellene másképp csinálnod, de az éles helyzetekben a régi minta veszi át az' +
-        ' irányítást.',
-    },
-    {
-      num: '05',
-      title: 'Nem érted, miért pont ő',
-      description:
-        'Bizonyos férfitípusok valamiért sokkal mélyebben megérintenek. Ennek is lehet belső oka.',
-    },
-    {
-      num: '06',
-      title: 'Mélyebb válaszra vágysz',
-      description:
-        'Nem hibást keresel. Meg akarod érteni önmagad és a kapcsolataid mögött húzódó összefüggéseket.',
-    },
-  ];
-
-  readonly methodItems: MethodItem[] = [
-    {
-      title: 'Asztrológia',
-      description: 'a születési képleted mint a belső térképed szimbolikus nyelve.',
-    },
-    {
-      title: 'Csung Jüan Csikung',
-      description: 'kapcsolat az energiáiddal, a tested jelzéseivel és a belső erőddel.',
-    },
-    {
-      title: 'Önismeret',
-      description: 'hogy a felismerésből valódi belső változás szülessen.',
-    },
+        'Azt érzed, hogy bénító félelem jár át, már a gondolatától is, hogy újból ismerkedni kezdj. ' +
+        'Biztos akarsz lenni abban, hogy a következő tényleg jobb lesz.',
+    }
   ];
 
   readonly videos: VideoItem[] = [
@@ -105,13 +81,17 @@ export class HomePage {
     {
       question: 'Mi történik a csoportban?',
       answer:
-        'Videókban boncolom le a párkapcsolati teremtéssel és a bulvárasztrológiával kapcsolatos tévhiteket, és megmutatom a mélyebb energetikai és asztrológiai összefüggéseket. Az ingyenes tartalmak mellett élő csoportos foglalkozásokat és workshopokat is tartok.',
+        'Videókban oldom fel a párkapcsolati teremtéssel és a bulvárasztrológiával kapcsolatos tévhiteket, és' +
+        ' megmutatom a mélyebb energetikai és asztrológiai összefüggéseket ezen a területen.' + ' A születési' +
+        ' képletet' +
+        ' nem jóslásra, hanem önismereti eszközként használjuk.',
       isOpen: signal(false),
     },
     {
       question: 'Szükség van előzetes asztrológiai tudásra?',
       answer:
-        'Egyáltalán nem. A születési képletet nem jóslásra, hanem önismereti eszközként használjuk. Mindent elmagyarázok, nincs szükség előzetes tudásra.',
+        'Egyáltalán nincs.  Mindent' +
+        ' elmagyarázok.',
       isOpen: signal(false),
     },
     {
