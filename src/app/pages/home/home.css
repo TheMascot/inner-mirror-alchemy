@@ -473,10 +473,12 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.28);
 
   .quote {
     font-size: 18px;
+    text-align: center;
   }
 
   .group__quote {
    grid-column: 1;
+    text-align: center;
   }
 
   .about__content{

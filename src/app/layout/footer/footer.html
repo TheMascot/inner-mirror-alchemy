@@ -1,8 +1,12 @@
 <footer class="footer">
   <div class="container">
-    <p class="footer__copy">
-      &copy; {{ currentYear }} {{ author }} · {{ siteName }}
-    </p>
+    <span routerLink="/adatkezeles" class="footer__copy nav__element">Adatkezelési tájékoztató</span>
+    <span class="footer__copy">
+       · &copy; {{ currentYear }} {{ author }} · {{ siteName }} ·
+    </span>
+    <span routerLink="/sutik" class="footer__copy nav__element">
+      Cookie tájékoztató
+    </span>
     <p class="footer__small">
       Megjegyzés: Ez az oldal nem a Facebook™ része és nem egy általa szponzorált tartalom. A Facebook™ védjegy a Facebook™ tulajdona.
       This site is not part of and/or endorsed by Facebook™. Facebook™ is a trademark of Facebook™, Inc.

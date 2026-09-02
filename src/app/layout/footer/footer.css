@@ -14,4 +14,13 @@
 .footer__small {
   line-height: 1;
   font-size: x-small;
+  margin-top: 0.5rem;
+}
+
+.nav__element{
+  text-decoration: underline;
+}
+
+.nav__element:hover{
+  cursor: pointer;
 }

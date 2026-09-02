@@ -66,13 +66,6 @@ export class HomePage {
     }
   ];
 
-  readonly videos: VideoItem[] = [
-    { title: 'Tudatos párválasztás kihívása',
-      embedUrl: 'https://www.youtube.com/embed/VorQowMRCpw?si=yd_W0ITi8FnHfR76'
-    },
-
-  ];
-
   readonly faqs: FaqItem[] = [
     {
       question: 'Kinek szól a párkapcsolati önismereti csoport?',
@@ -93,7 +86,7 @@ export class HomePage {
       question: 'Szükség van előzetes asztrológiai tudásra?',
       answer:
         'Egyáltalán nincs.  Mindent' +
-        ' elmagyarázok.' + 'Viszont ha felmerül benned kérdés, a csoportban van lehetőséged feltenni azokat és én' +
+        ' elmagyarázok.' + 'Viszont ha felmerül benned kérdés, a csoportban van lehetőséged feltenni azt és én' +
         ' válaszolni fogok., ',
       isOpen: signal(false),
     },
