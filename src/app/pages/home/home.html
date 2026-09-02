@@ -52,7 +52,7 @@
 <!-- Recognition -->
 <section class="section" id="ismeros" aria-labelledby="ismeros-heading">
   <div class="container">
-    <div class="section-center">
+    <div class="section__center">
       <span class="kicker">Talán magadra ismersz</span>
       <h2 id="ismeros-heading">
         Másik férfi, ígéretes kezdet, végül mégis ugyanaz a forgatókönyv…
@@ -65,7 +65,7 @@
       </p>
     </div>
 
-    <div class="card-grid">
+    <div class="card__grid">
       @for (card of recognitionCards; track card.num) {
         <article class="card">
           <div class="card__num">{{ card.num }}</div>
@@ -75,7 +75,7 @@
       }
     </div>
 
-    <blockquote class="section-quote">
+    <blockquote class="quote">
       A párkapcsolat nem csupán arról mesél, hogy milyen a másik ember.
       Arról is tükröt tart, hogy te mennyire vagy tudatos a benned élő férfi és női mintáidra.
     </blockquote>
@@ -83,7 +83,7 @@
 </section>
 
 <!-- Method -->
-<section class="section section--sand" id="csoport" aria-labelledby="csoport-heading">
+<section class="section section__sand" id="csoport" aria-labelledby="csoport-heading">
   <div class="container group">
     <div class="group__symbol">
       <img
@@ -100,7 +100,7 @@
       <h2 id="csoport-heading">A nő belső alkímiája a boldog párkapcsolatért</h2>
       <h3 class="group__tagline">Önismereti szemlélet</h3>
       <p class="group__text">
-       <strong>Elmondom,</strong> milyen titkok rejlenek a születési képletedben. A tartalmaimmal átvezetlek egy
+        <strong>Elmondom,</strong> milyen titkok rejlenek a születési képletedben. A tartalmaimmal átvezetlek egy
         távlati,
         teljesen más világnézetbe, ahol végre átláthatod az élet íratlan törvényeit és láthatatlan összefüggéseit.
       </p>
@@ -116,7 +116,8 @@
         érdekében, hogy könnyebben felismerd és megtanuld kezelni ezeket.
       </p>
       <p class="group__text">
-        <strong>A csoportban</strong> egy olyan egyedülálló közösséghez tartozhatsz, ahol a tagok lelkesen kutatják önmagukat,
+        <strong>A csoportban</strong> egy olyan egyedülálló közösséghez tartozhatsz, ahol a tagok lelkesen kutatják
+        önmagukat,
         megosztják tapasztalataikat, és hozzád hasonlóan, fejlődni vágynak.
       </p>
 
@@ -129,7 +130,7 @@
         MEGISMEREM A KÖZÖSSÉGET
       </a>
     </div>
-    <blockquote class="group-quote">
+    <blockquote class="quote group__quote">
       "Amíg a tudattalant nem teszed tudatossá, addig az fogja irányítani az életed, te pedig végzetnek fogod hívni."
       - C. G. Jung -
     </blockquote>
@@ -139,26 +140,51 @@
 <!-- Community videos -->
 <section class="section" aria-labelledby="csoport-video-heading">
   <div class="container">
-    <div class="section-center">
+    <div class="section__center">
       <span class="kicker">Izelítő a csoport tartalmaiból</span>
       <h2 id="csoport-video-heading">
         Más szemmel nézünk rá<br/>
         a párkapcsolatokra
       </h2>
     </div>
-    <div class="video-grid">
-      @for (video of videos; track video.title) {
-        <div class="video-card">
-          <div class="video-card__play" aria-hidden="true">▶</div>
-          <p class="video-card__title">{{ video.title }}</p>
-        </div>
-      }
+    <div class="video__grid">
+      <div class="video__item">
+        <iframe src="https://www.youtube.com/embed/VorQowMRCpw?si=yd_W0ITi8FnHfR76"
+                title="Tudatos párválasztás kihívása"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video__item">
+        <iframe src="https://www.youtube.com/embed/iogGQwn3bUA?si=YlU13IaRAeFnGrG2"
+                title="Lilith tipusú nő útja"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video__item">
+        <iframe src="https://www.youtube.com/embed/aYmQYIuqgiU?si=9TUZfknzJY8eCSc5"
+                title="Ez az ami megfog a másikban az ellenállhatatlan vonzalom titka"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+        </iframe>
+      </div>
     </div>
+    <blockquote class="quote video__quote">
+      "Ítélsz rólam, mint bölcsről, badarról: <br>
+      Rajtam látsz törvényt sajátmagadról." <br>
+      - Weöres Sándor -
+    </blockquote>
   </div>
 </section>
 
 <!-- About -->
-<section class="section section--sand" id="rolam" aria-labelledby="rolam-heading">
+<section class="section section__sand" id="rolam" aria-labelledby="rolam-heading">
   <div class="container about">
     <div class="about__portrait" aria-label="Szita Viola portréja – hamarosan">
       <img
@@ -176,7 +202,7 @@
       </h2>
       <p class="about__text">Hanem azt, hogyan <strong>értsd meg önmagad</strong>
         mélyebben a kapcsolataid vonatkozásában.</p>
-      <p>
+      <p class="about__text">
         <strong>Közel 20 éve</strong> kutatom a párkapcsolatok működését. Az ezoterikus és pszichológiai szemléletű
         asztrológiában
         találtam meg azt a szimbolikus rendszert, amely segít rálátni arra, mi zajlik bennünk a kapcsolataink tükrében.
@@ -189,7 +215,8 @@
         amit önmagunkban még nem látunk vagy nem tudunk elfogadni.
       </p>
       <p class="about__text">
-        <strong>A felismerés</strong> azonban önmagában nem mindig elég. A megértést át kell tudnunk ültetni az életünkbe – ezért
+        <strong>A felismerés</strong> azonban önmagában nem mindig elég. A megértést át kell tudnunk ültetni az
+        életünkbe – ezért
         vált számomra az önismereti munka mellett az energetikai szemlélet is fontossá. A Csikung energiafejlesztő
         módszereivel más oldalról is közelíthetünk a vágyott változáshoz.
       </p>
@@ -205,7 +232,7 @@
 <!-- FAQ -->
 <section class="section" aria-labelledby="faq-heading">
   <div class="container faq">
-    <div class="section-center">
+    <div class="section__center">
       <span class="kicker">Kérdések</span>
       <h2 id="faq-heading">Gyakran ismételt kérdések</h2>
     </div>
@@ -231,15 +258,15 @@
   </div>
 </section>
 
-<section class="section" id="kapcsolat" aria-labelledby="kapcsolat-heading">
+<section class="section section__sand" id="kapcsolat" aria-labelledby="kapcsolat-heading">
   <div class="container">
-    <div class="section-center">
+    <div class="section__center">
       <span class="kicker">Kapcsolat</span>
       <h2 id="kapcsolat-heading">Írj nekem</h2>
       <p class="lead">Szívesen hallok felőled.</p>
     </div>
 
-    <div class="card-grid">
+    <div class="card__grid">
       <article class="card">
         <div class="card__num">01</div>
         <h3 class="card__title">Facebook™-üzenet</h3>
@@ -267,17 +294,6 @@
           />
         </div>
       </article>
-
-      <!--      <article class="card">-->
-      <!--        <div class="card__num">03</div>-->
-      <!--        <h3 class="card__title">Események</h3>-->
-      <!--        <p class="card__desc">-->
-      <!--          Az összes közelgő eseményt először a Facebook-csoportban hirdetem meg.-->
-      <!--        </p>-->
-      <!--        <a [href]="facebookUrl" target="_blank" rel="noopener noreferrer" class="contact-link">-->
-      <!--          Események követése →-->
-      <!--        </a>-->
-      <!--      </article>-->
     </div>
   </div>
 </section>

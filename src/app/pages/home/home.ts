@@ -15,6 +15,7 @@ interface MethodItem {
 
 interface VideoItem {
   title: string;
+  embedUrl: string;
 }
 
 interface FaqItem {
@@ -66,9 +67,10 @@ export class HomePage {
   ];
 
   readonly videos: VideoItem[] = [
-    { title: 'Miért nem elég „bevonzani" a megfelelő férfit?' },
-    { title: 'Mit mutat meg rólad valójában a születési képleted?' },
-    { title: 'Miért vonzódsz újra és újra hasonló férfitípushoz?' },
+    { title: 'Tudatos párválasztás kihívása',
+      embedUrl: 'https://www.youtube.com/embed/VorQowMRCpw?si=yd_W0ITi8FnHfR76'
+    },
+
   ];
 
   readonly faqs: FaqItem[] = [
