@@ -2,20 +2,20 @@ import { Component, signal } from '@angular/core';
 import { FacebookCta } from '../../shared/components/facebook-cta/facebook-cta';
 import { siteConfig } from '../../core/config/site.config';
 
+// interface MethodItem {
+//   title: string;
+//   description: string;
+// }
+//
+// interface VideoItem {
+//   title: string;
+//   embedUrl: string;
+// }
+
 interface RecognitionCard {
   num: string;
   title: string;
   description: string;
-}
-
-interface MethodItem {
-  title: string;
-  description: string;
-}
-
-interface VideoItem {
-  title: string;
-  embedUrl: string;
 }
 
 interface FaqItem {

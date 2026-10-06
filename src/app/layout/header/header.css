@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(251, 248, 242, 0.93);
+  background: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
@@ -97,7 +97,7 @@
 .mobile-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(48, 42, 39, 0.45);
+  background: var(--overlay-bg);
   z-index: 15;
 }
 

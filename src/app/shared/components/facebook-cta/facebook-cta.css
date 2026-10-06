@@ -1,8 +1,8 @@
 .cta {
   padding: 105px 0;
   text-align: center;
-  color: #fffaf3;
-  background: var(--ink);
+  color: var(--cta-fg);
+  background: var(--cta-bg);
 }
 
 .cta__inner {
@@ -10,12 +10,12 @@
 }
 
 .cta__kicker {
-  color: #efd9af;
+  color: var(--cta-kicker);
   margin-bottom: var(--space-sm);
 }
 
 .cta__heading {
-  color: #fffaf3;
+  color: var(--cta-fg);
   margin: 12px auto 20px;
   max-width: 850px;
 }
@@ -24,7 +24,7 @@
   max-width: 700px;
   margin: 0 auto 32px;
   font-size: 18px;
-  color: rgba(255, 250, 243, 0.85);
+  color: var(--cta-text);
 }
 
 .cta__btn {
